@@ -1,0 +1,15 @@
+<main>
+    <h2>our products</h2>
+
+    <% for(const data of datas) { %>
+    
+        <article>
+            <h3><%= data.title%></h3>
+            <img src="/img/<%= data.url_img %>"/>
+            <p>dans la catégorie : <strong><%= data.category%></strong></p>
+            <a href="/shop/item/<%= data.id %>">detail</a>
+        </article>
+            
+    <% } %>
+
+</main>
